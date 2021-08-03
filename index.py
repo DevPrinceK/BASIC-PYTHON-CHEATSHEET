@@ -1,6 +1,6 @@
 # PYTHON CHEATSHEET
 
-#0 NOTE :- DATA TYPES  
+#0 NOTE :- DATA TYPES
 
 #1 NOTE :- CREATING VARIABLES
 name = "Prince Kyeremanteng Samuel"     # string variable
@@ -33,4 +33,41 @@ nestedListToDic = dict([["name", "Prince"], ["age",23], ["town","Amanfrom"]])
 
 print(nestedListToDic)
 
-#5 NOTE :-  
+#5 NOTE :-  FUNCTIONS - NO RETURN STATEMENT
+def sayHi():
+    print("Hi")
+
+
+
+def greet(name):
+    print(f"Hello {name}")
+
+
+def add(a, b):
+    print(a + b)
+
+def mult(a, b):
+    print(a * b)
+
+# FUNCTIONS WITH RETURN STATEMENT
+def sayHi2():
+    return "Hi"
+
+def greet2(name):
+    return f"Hello {name}"
+
+def add(a, b):
+    return a + b
+
+def mult(a, b):
+    return a * b
+
+def div(a, b):
+    if(b != 0):
+        return a / b
+    else:
+        return "Zero division error"
+# print(div(2, 50))
+# print(div(5, 0))
+
+
