@@ -3,6 +3,9 @@
 #0 NOTE :- DATA TYPES
 
 #1 NOTE :- CREATING VARIABLES
+#from _typeshed import Self
+
+
 name = "Prince Kyeremanteng Samuel"     # string variable
 age = 23                                # int variable
 gpa = 3.46                              # floating point variable
@@ -67,7 +70,36 @@ def div(a, b):
         return a / b
     else:
         return "Zero division error"
-# print(div(2, 50))
-# print(div(5, 0))
+
+class Bird:
+    '''A class prototype || Create birds'''
+    def __init__(self, name, age, legs):
+        '''Init method sets the name and age of the bird'''
+        self.name = name
+        self.age = age
+        self.legs = legs
+
+    def setName(self, newName):
+        '''Gives the bird  new name'''
+        self.name = newName
+
+    def setAge(self, newAge):
+        '''Give the bird a new age'''
+        self.age = newAge
 
 
+    def getName(self):
+        '''Gets the names of the current bird'''
+        return self.name
+    
+    def getAge(self):
+        '''Gets the age of the current bird'''
+        return self.age
+
+#creates an instance of the bird class  | birdOne becomes an instance (object of the Bird class)
+birdOne = Bird("Birdy", 2, 2)
+
+birdOne.setAge(5)
+birdOne.setName("Buddy")
+print(birdOne.getAge())
+print(birdOne.getName())
