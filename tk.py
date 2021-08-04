@@ -27,7 +27,7 @@ myLable = Label(root, text="Hello world", bg="blue", fg="white")
 myLable.place(x=10, y=50)
 
 #buttons
-myButton = Button(root, text="Click Me", height=5, width=20, bg="blue", fg="white")
+myButton = Button(root, text="Click Me", height=3, width=12, bg="blue", fg="white")
 myButton.place(x=10, y=200)
 
 # entry point
@@ -40,5 +40,5 @@ myEntry.place(x=10, y=300)
 
 
 
-
-root.mainloop()
+if __name__ == "__main__":
+    root.mainloop()
