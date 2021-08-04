@@ -36,9 +36,5 @@ myEntry.place(x=10, y=300)
 
 
 
-
-
-
-
 if __name__ == "__main__":
     root.mainloop()
